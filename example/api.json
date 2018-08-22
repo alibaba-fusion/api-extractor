@@ -1,0 +1,213 @@
+{
+  "name": "MyComponent",
+  "props": {
+    "aaa": {
+      "type": {
+        "name": "bool"
+      },
+      "required": false,
+      "description": "Description of prop \"aaa\"",
+      "defaultValue": {
+        "value": "true",
+        "computed": false
+      },
+      "docblock": "Description of prop \"aaa\""
+    },
+    "bbb": {
+      "type": {
+        "name": "enum",
+        "value": [
+          {
+            "value": "'foo'",
+            "computed": false
+          },
+          {
+            "value": "'bar'",
+            "computed": false
+          }
+        ]
+      },
+      "required": false,
+      "description": "Description of prop \"bbb\"",
+      "defaultValue": {
+        "value": "'foo'",
+        "computed": false
+      },
+      "docblock": "Description of prop \"bbb\""
+    },
+    "ccc": {
+      "type": {
+        "name": "union",
+        "value": [
+          {
+            "name": "number"
+          },
+          {
+            "name": "string"
+          }
+        ]
+      },
+      "required": false,
+      "description": "Description of prop \"ccc\"",
+      "docblock": "Description of prop \"ccc\""
+    },
+    "ddd": {
+      "type": {
+        "name": "arrayOf",
+        "value": {
+          "name": "number"
+        }
+      },
+      "required": false,
+      "description": "Description of prop \"ddd\"",
+      "defaultValue": {
+        "value": "[]",
+        "computed": false
+      },
+      "docblock": "Description of prop \"ddd\""
+    },
+    "eee": {
+      "type": {
+        "name": "node"
+      },
+      "required": false,
+      "description": "Description of prop \"eee\"",
+      "defaultValue": {
+        "value": "'Please'",
+        "computed": false
+      },
+      "docblock": "Description of prop \"eee\""
+    },
+    "fff": {
+      "type": {
+        "name": "shape",
+        "value": {
+          "count": {
+            "name": "number",
+            "required": false
+          },
+          "color": {
+            "name": "string",
+            "required": false
+          }
+        }
+      },
+      "required": false,
+      "description": "Description of prop \"fff\"",
+      "docblock": "Description of prop \"fff\"\n @property {Number} count Description of \"count\"\n @property {String} color Description of \"color\"",
+      "properties": [
+        {
+          "name": "count",
+          "description": "Description of \"count\"",
+          "type": {
+            "name": "Number"
+          }
+        },
+        {
+          "name": "color",
+          "description": "Description of \"color\"",
+          "type": {
+            "name": "String"
+          }
+        }
+      ]
+    },
+    "ggg": {
+      "type": {
+        "name": "func"
+      },
+      "required": false,
+      "description": "Description of prop \"ggg\"",
+      "defaultValue": {
+        "value": "() => {}",
+        "computed": false
+      },
+      "docblock": "Description of prop \"ggg\"\n @param {String} xxx Description of \"xxx\"\n @param {Object} yyy Description of \"yyy\"\n @param {String} yyy.a Description of \"yyy.a\"\n @param {String} yyy.b Description of \"yyy.b\"\n @return {Boolean} Description of return value",
+      "params": [
+        {
+          "name": "xxx",
+          "description": "Description of \"xxx\"",
+          "type": {
+            "name": "String"
+          }
+        },
+        {
+          "name": "yyy",
+          "description": "Description of \"yyy\"",
+          "type": {
+            "name": "Object"
+          }
+        },
+        {
+          "name": "yyy.a",
+          "description": "Description of \"yyy.a\"",
+          "type": {
+            "name": "String"
+          }
+        },
+        {
+          "name": "yyy.b",
+          "description": "Description of \"yyy.b\"",
+          "type": {
+            "name": "String"
+          }
+        }
+      ],
+      "returns": {
+        "description": "Description of return value",
+        "type": {
+          "name": "Boolean"
+        }
+      }
+    }
+  },
+  "methods": [
+    {
+      "name": "staticMethod",
+      "docblock": "Description of method \"staticMethod\"\n@param {Number} foo Description of \"foo\"\n@param {Number} bar Description of \"bar\"\n@return {Number} Description of return value",
+      "modifiers": [
+        "static"
+      ],
+      "params": [
+        {
+          "name": "foo",
+          "description": "Description of \"foo\"",
+          "type": {
+            "name": "Number"
+          }
+        },
+        {
+          "name": "bar",
+          "description": "Description of \"bar\"",
+          "type": {
+            "name": "Number"
+          }
+        }
+      ],
+      "returns": {
+        "description": "Description of return value",
+        "type": {
+          "name": "Number"
+        }
+      },
+      "description": "Description of method \"staticMethod\""
+    },
+    {
+      "name": "instanceMethod",
+      "docblock": "Description of method \"instanceMethod\"\n@param {String} foo Description of \"foo\"",
+      "modifiers": [],
+      "params": [
+        {
+          "name": "foo",
+          "description": "Description of \"foo\"",
+          "type": {
+            "name": "String"
+          }
+        }
+      ],
+      "returns": null,
+      "description": "Description of method \"instanceMethod\""
+    }
+  ],
+  "subComponents": []
+}

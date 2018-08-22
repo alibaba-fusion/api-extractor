@@ -1,0 +1,46 @@
+{
+  "name": "@alifd/api-extractor",
+  "version": "3.3.0",
+  "description": "A tool to help extracting api from React components.",
+  "keywords": [
+    "react",
+    "api",
+    "doc",
+    "fusion",
+    "next"
+  ],
+  "homepage": "https://github.com/alibaba-fusion/api-extractor",
+  "bugs": "https://github.com/alibaba-fusion/api-extractor/issues",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba-fusion/api-extractor.git"
+  },
+  "scripts": {
+    "lint": "eslint 'lib/**/*.js'",
+    "test": "mocha --require intelli-espower-loader",
+    "example": "node example/script.js",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0",
+    "doctrine": "^2.0.0",
+    "glob": "^7.1.2",
+    "react-docgen": "^2.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "husky": "^0.14.3",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.5.3",
+    "power-assert": "^1.4.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
