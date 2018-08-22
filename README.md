@@ -182,9 +182,6 @@ export default class Item extends Component {
 size | the menu size | String | 'medium'
 onSelect | select menu callback<br><br>**签名**:<br>Function(selectedKeys: Array) => void<br>**参数**:<br>selectedKeys {Array} the seleced keys | Function | () => {}
 ```
-渲染结果：
-
-![DingTalk20170802165954](http://git.cn-hangzhou.oss-cdn.aliyun-inc.com/uploads/next/1.x/138aa77334e77a4dd4346043dabefc51/DingTalk20170802165954.png)
 
 ## Note
 1. 只有添加了 jsDoc 注释的组件类，组件的属性以及组件的方法，才会被工具提取出相应的 API 信息。
