@@ -30,12 +30,25 @@ const apiInfo = extractor.extract(componentDirPath);
 
 ## API
 
-### extract(componentDirPath, options)
+### extract(componentDirPath, options, parentMap)
 **参数**：
 
 * componentDirPath `String` 组件代码文件夹路径
 * options `Object` 可选项
   * md `Boolean` 是否生成`props`和`method`的 markdown 片段，默认值为`false`
+* parentMap `Object` 可选项 组件继承关系，例如 Nav 继承自 Menu ，通过该参数可将 Menu 上的props merge到 Nav上
+```js
+{
+  'Nav': {
+    name: 'Menu',
+    path: 'my-path/src/menu'
+  },
+  'Nav.Item': {
+    name: 'Menu.Item',
+    path: 'my-path/src/menu'
+  }
+}
+```
 
 **返回值**：
 
