@@ -36,6 +36,7 @@ const apiInfo = extractor.extract(componentDirPath);
 * componentDirPath `String` 组件代码文件夹路径
 * options `Object` 可选项
   * md `Boolean` 是否生成`props`和`method`的 markdown 片段，默认值为`false`
+  * fileErrorHandler `Function` 自定义单个文件的错误处理函数，默认直接抛出错误
 * parentMap `Object` 可选项 组件继承关系，例如 Nav 继承自 Menu ，通过该参数可将 Menu 上的props merge到 Nav上
 ```js
 {
