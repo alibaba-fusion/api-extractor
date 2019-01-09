@@ -11,7 +11,11 @@ describe('parse', () => {
     assert(fs.readFileSync(path.join(__dirname, '../example/api.json'), 'utf8') === apiStr);
   })
   it('extends', () => {
-    const apiInfo = extractor.extract(__dirname);
+    const apiInfo = extractor.extract(__dirname, {
+      fileErrorHandler: (e) => {
+        console.error(e);
+      }
+    });
     assert('prefix' in apiInfo.props);
     assert('hint' in apiInfo.props);
     assert(apiInfo.props.value.description === '当前值');
