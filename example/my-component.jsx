@@ -10,6 +10,7 @@ class MyComponent extends React.Component {
     ignored: PropTypes.string,
     /**
      * Description of prop "aaa"
+     * @device pc,phone
      **/
     aaa: PropTypes.bool,
     /**
@@ -29,6 +30,7 @@ class MyComponent extends React.Component {
     ddd: PropTypes.arrayOf(PropTypes.number),
     /**
      *  Description of prop "eee"
+     * @device phone
      **/
     eee: PropTypes.node,
     /**
