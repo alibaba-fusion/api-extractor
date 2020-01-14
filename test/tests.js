@@ -9,7 +9,7 @@ describe('parse', () => {
     const apiInfo = extractor.extract(path.resolve(__dirname, '../example'));
     const apiStr = JSON.stringify(apiInfo, null, 2);
     assert(fs.readFileSync(path.join(__dirname, '../example/api.json'), 'utf8') === apiStr);
-  })
+  });
   it('extends', () => {
     const apiInfo = extractor.extract(__dirname, {
       fileErrorHandler: (e) => {
@@ -20,5 +20,5 @@ describe('parse', () => {
     assert('hint' in apiInfo.props);
     assert(apiInfo.props.value.description === '当前值');
     assert(apiInfo.props.hint.description === '水印 Icon');
-  })
-})
+  });
+});

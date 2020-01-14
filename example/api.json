@@ -11,7 +11,11 @@
         "value": "true",
         "computed": false
       },
-      "docblock": "Description of prop \"aaa\""
+      "docblock": "Description of prop \"aaa\"\n@device pc,phone",
+      "device": {
+        "value": "pc,phone",
+        "computed": false
+      }
     },
     "bbb": {
       "type": {
@@ -76,7 +80,11 @@
         "value": "'Please'",
         "computed": false
       },
-      "docblock": "Description of prop \"eee\""
+      "docblock": "Description of prop \"eee\"\n@device phone",
+      "device": {
+        "value": "phone",
+        "computed": false
+      }
     },
     "fff": {
       "type": {
