@@ -66,6 +66,8 @@ class Base extends React.Component {
          * 自定义字符串计算长度方式
          * @param {String} value 数据
          * @returns {Number} 自定义长度
+         * @version 1.2.0+
+         * @device PC
          */
         getValueLength: PropTypes.func,
         inputStyle: PropTypes.object,
