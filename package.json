@@ -1,6 +1,6 @@
 {
   "name": "@alifd/api-extractor",
-  "version": "3.5.2",
+  "version": "3.7.2",
   "description": "A tool to help extracting api from React components.",
   "keywords": [
     "react",
